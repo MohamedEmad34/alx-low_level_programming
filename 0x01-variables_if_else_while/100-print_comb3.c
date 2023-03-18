@@ -7,8 +7,8 @@
 
 int main(void)
 {
-        char low;
-	char high;
+        int low;
+	int high;
 
         for (low = '0'; low < '9'; low++)
 	{
