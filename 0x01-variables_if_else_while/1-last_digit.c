@@ -3,7 +3,12 @@
 #include <stdio.h>
 /* more headers goes there */
 
-/* main function is used for find last digit and chek if is greater or less than and equal zero   */
+/**
+ * main function
+ * is used for find last digit
+ * chek if is greater or less than and equal zero
+ *
+ * Return Always:0.   */
 int main(void)
 {
 	int n;
