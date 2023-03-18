@@ -10,6 +10,7 @@ int main(void)
 	int low;
 	int high;
 	int size;
+
 	for (low = '0'; low < '8'; low++)
 	{
 	for (high = low + 1; high  < '9'; high++)
