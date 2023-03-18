@@ -7,21 +7,21 @@
 
 int main(void)
 {
-        int low;
+	int low;
 	int high;
 
-        for (low = '0'; low < '9'; low++)
+	for (low = '0'; low < '9'; low++)
 	{
 	for (high = low+1 ; high <= '9'; high++)
 	{
 	putchar(low);
 	putchar(high);
 	if (low == '8' && high == '9')
-	continue;	
+	continue;
 	putchar(',');
-	putchar(' ');	
-	}	
+	putchar(' ');
 	}
-        putchar('\n');
+	}
+	putchar('\n');
 	return (0);
 }
