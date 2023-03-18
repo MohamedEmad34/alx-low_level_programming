@@ -19,7 +19,7 @@ int main(void)
 	putchar(low);
 	putchar(high);
 	putchar(size);
-	if (low = '7' && high == '8')
+	if (low == '7' && high == '8')
 	continue;
 	putchar(',');
 	putchar(' ');
