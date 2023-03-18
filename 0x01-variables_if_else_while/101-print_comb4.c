@@ -7,12 +7,12 @@
 
 int main(void)
 {
-        int low;
+	int low;
 	int high;
 	int size;
-        for (low = '0'; low < '8'; low++)
+	for (low = '0'; low < '8'; low++)
 	{
-        for (high = low + 1; high  < '9'; high++)
+	for (high = low + 1; high  < '9'; high++)
 	{
 	for (size = high + 1; size <= '9'; size++)
 	{
@@ -25,7 +25,7 @@ int main(void)
 	putchar(' ');
 	}
 	}
-	}	
-        putchar('\n');
-        return (0);
+	}
+	putchar('\n');
+	return (0);
 }
