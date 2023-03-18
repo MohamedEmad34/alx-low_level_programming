@@ -12,7 +12,7 @@ int main(void)
 
 	for (low = '0'; low < '9'; low++)
 	{
-	for (high = low+1 ; high <= '9'; high++)
+	for (high = low + 1 ; high <= '9'; high++)
 	{
 	putchar(low);
 	putchar(high);
