@@ -1,15 +1,15 @@
 #include <stdio.h>
 
 /**
- * main prints the alphabet
- * Return: Always (success)
+ * main - Entry point  
+ * Return: Always 0 (success)
  */
 int main(void)
 {
-        char c;
+         char c;
 
-        for (c = 'z'; c  >= 'a'; c--)
-        putchar(c);
-	putchar('\n');
-	return (0);
+         for (c = 'z'; c  >= 'a'; c--)
+         putchar(c);
+         putchar('\n');
+	 return (0);
 }
