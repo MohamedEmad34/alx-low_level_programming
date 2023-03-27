@@ -3,8 +3,8 @@
 
 /**
  * print_array - print a string
- * @str: the string to print
- *
+ * @a: the array to print
+ * @n:length of array
  * Return: void
  */
 
@@ -16,7 +16,7 @@ void print_array(int *a, int n)
 	{
 		printf("%d", a[i]);
 		if (i != n - 1)
-			printf(",");
+			printf(", ");
 	}
 	printf("\n");
 }
