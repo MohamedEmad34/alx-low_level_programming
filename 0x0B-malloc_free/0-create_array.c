@@ -1,5 +1,5 @@
 #include "main.h"
-#include "stdlib"
+#include <stdlib.h>
 /**
  * create_array - Entry point
  * @size: size of array
