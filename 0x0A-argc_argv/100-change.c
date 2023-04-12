@@ -34,6 +34,11 @@ int main(int argc, char **argv)
 		result += count / 5;
 		count = count % 5;
 		}
+		if (count >= 2)
+		{
+		result += count / 2;
+		count = count % 2;
+		}
 		if (count > 0)
 		result += count;
 		printf("%d\n", result);
