@@ -10,6 +10,7 @@
 int main(int argc, char **argv)
 {
 	int result = 0, count;
+
 	if (argc == 1)
 	{
 		printf("Error\n");
