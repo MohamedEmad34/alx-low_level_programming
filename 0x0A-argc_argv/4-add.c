@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include "main.h"
+#include <ctype.h>
 /**
  * main - Entry point
  * @argc: argument
@@ -9,23 +10,23 @@
 
 int main(int argc, char **argv)
 {
-	int result = 0, i;
-	
+	int result = 0, i, j;
+
 	if (argc == 1)
 		printf("0\n");
 	else
 	{
 		for (i = 1; i < argc; i++)
 		{
-			if (check_num(argv[i]))
+			for (j = 0; argv[i][j] != '\0'; j++)
 			{
-				result += atoi(argv[i]);
-			}
-			else
-			{
+				if (!isdigit(argv[i][j]))
+				{
 				printf("Error\n");
 				return (1);
+				}
 			}
+			result += atoi(argv[i]);
 		}
 		printf("%d\n", result);
 	}
