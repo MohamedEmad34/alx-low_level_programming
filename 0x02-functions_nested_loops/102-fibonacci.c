@@ -7,18 +7,18 @@
  */
 int main(void)
 {
-	int a = 1, b = 2, c, i;
+	unsigned int a = 1, b = 2, c, i;
 
 	for (i = 0; i < 50; i++)
 	{
 		c = a + b;
 		if (i == 0)
-		printf("%d, %d", a, b);
+		printf("%u, %u, ", a, b);
 		if (i != 0)
 		{
 			printf(", ");
-			printf("%d", c);
 		}
+		printf("%u", c);
 		a = b;
 		b = c;
 	}
