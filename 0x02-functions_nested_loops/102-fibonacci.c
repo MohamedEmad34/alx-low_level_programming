@@ -7,21 +7,21 @@
  */
 int main(void)
 {
-	int a, b = 1, c = 2, i;
+	int a = 1, b = 2, c, i;
 
 	for (i = 0; i < 50; i++)
 	{
-		a = b;
-		b = c;
 		c = a + b;
 		if (i == 0)
-		printf("%d, %d\n", a, b);
+		printf("%d, %d", a, b);
 		if (i != 0)
 		{
 			printf(", ");
 			printf("%d", c);
 		}
-		printf("\n");
+		a = b;
+		b = c;
 	}
+	printf("\n");
 	return (0);
 }
