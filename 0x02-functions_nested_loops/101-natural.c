@@ -8,12 +8,13 @@
  */
 int main(void)
 {
-	int n = 3, sum = 3;
+	int n = 0, sum = 0; 
 
-	while (sum < 1024)
+	while (n < 1024)
 	{
-		n +=3;
+		if (n % 3 == 0 || n % 5 == 0)
 		sum += n;
+		n++;
 	}
 	printf("%d\n", sum);
 	return (0);
