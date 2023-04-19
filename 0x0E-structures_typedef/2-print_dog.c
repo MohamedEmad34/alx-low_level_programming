@@ -3,10 +3,10 @@
 #include <stdio.h>
 /**
  * print_dog - print parameter of struct
- *@dog: type of struct to print
- */ 
+ *@d: type of struct to print
+ */
 void print_dog(struct dog *d)
-{       
+{
 	if (d == NULL)
 	return;
 	if (d->name == NULL)
