@@ -10,9 +10,9 @@ void print_all(const char * const format, ...)
 {
 	int i = 0;
 	char *str, *sep = "";
-	
+
 	va_list form;
-	
+
 	va_start(form, format);
 
 	if (format)
@@ -21,11 +21,14 @@ void print_all(const char * const format, ...)
 		{
 			switch (format[i])
 			{
-				case 'c': printf("%s%c", sep, va_arg(form, int));
+				case 'c':
+				printf("%s%c", sep, va_arg(form, int));
 				break;
-				case 'i': printf("%s%i", sep, va_arg(form, int));
+				case 'i':
+				printf("%s%d", sep, va_arg(form, int));
 				break;
-				case 'f': printf("%s%f", sep, va_arg(form, double));
+				case 'f':
+				printf("%s%f", sep, va_arg(form, double));
 				break;
 				case 's':
 					str = va_arg(form, char *);
@@ -34,7 +37,8 @@ void print_all(const char * const format, ...)
 					else
 					printf("%s%s", sep, str);
 					break;
-				default: i++;
+				default:
+				i++;
 				continue;
 			}
 			sep = ", ";
