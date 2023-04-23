@@ -22,6 +22,6 @@ int _prime_number(int n, int i)
 	if (n < 0 || n % i == 0)
 	return (0);
 	if (i >= n / 2)
-	return 1;
+	return (1);
 	return (_prime_number(n, i + 1));
 }
