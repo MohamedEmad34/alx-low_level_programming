@@ -12,4 +12,6 @@ int wildcmp(char *s1, char *s2);
 int _putchar(char c);
 int _sqrt(int n, int i);
 int _prime_number(int n, int i);
+int _strln(char *s);
+int _palindrome(char *s, int leftI, int riIn);
 #endif
